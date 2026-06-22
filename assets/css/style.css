@@ -526,6 +526,8 @@ ul  { list-style: none; }
 
   .hero__actions { flex-direction: column; gap: 10px; }
   .btn { width: 100%; justify-content: center; }
+
+  .scroll-indicator { display: none; }
 }
 
 /* ============================================================
@@ -615,11 +617,35 @@ ul  { list-style: none; }
   gap: 24px;
 }
 
+.about__heading {
+  font-family: var(--font-head);
+  font-size: clamp(1.75rem, 2.8vw, 2.4rem);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  color: var(--clr-text-1);
+  line-height: 1.1;
+}
+
+.about__bio-card {
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid var(--clr-border-h);
+  border-radius: var(--radius-lg);
+  padding: 28px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: border-color var(--transition-base), background var(--transition-base);
+}
+
+.about__bio-card:hover {
+  border-color: rgba(129, 140, 248, 0.22);
+  background: rgba(129, 140, 248, 0.03);
+}
+
 .about__bio {
   font-size: 1.05rem;
   line-height: 1.85;
   color: var(--clr-text-2);
-  max-width: 540px;
 }
 
 /* ── Education card ── */
@@ -1317,6 +1343,14 @@ ul  { list-style: none; }
   margin-top: 8px;
 }
 
+.contact__back-btn {
+  margin-top: 24px;
+}
+
+.contact__back-btn:hover .btn__icon {
+  transform: translateY(-3px);
+}
+
 /* ============================================================
    FOOTER
 ============================================================ */
@@ -1360,6 +1394,12 @@ ul  { list-style: none; }
   }
 
   .contact__actions .btn {
+    justify-content: center;
+  }
+
+  .contact__back-btn {
+    width: 100%;
+    max-width: 320px;
     justify-content: center;
   }
 }

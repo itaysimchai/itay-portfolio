@@ -72,7 +72,7 @@
             </svg>
           </a>
           <a href="assets/files/Itay-Simchai-CV.pdf" class="btn btn--secondary" download>
-            Download Resume
+            Resume
             <svg class="btn__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
               <path d="M10.75 2.75a.75.75 0 00-1.5 0v8.614L6.295 8.235a.75.75 0 10-1.09 1.03l4.25 4.5a.75.75 0 001.09 0l4.25-4.5a.75.75 0 00-1.09-1.03l-2.955 3.129V2.75z"/>
               <path d="M3.5 12.75a.75.75 0 00-1.5 0v2.5A2.75 2.75 0 004.75 18h10.5A2.75 2.75 0 0018 15.25v-2.5a.75.75 0 00-1.5 0v2.5c0 .69-.56 1.25-1.25 1.25H4.75c-.69 0-1.25-.56-1.25-1.25v-2.5z"/>
@@ -86,9 +86,10 @@
               <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
             </svg>
           </a>
-          <a href="https://github.com/itaysimchai" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <a href="mailto:nadrty8@gmail.com" class="social-link" aria-label="Email">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+              <path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z"/>
+              <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z"/>
             </svg>
           </a>
         </div>
@@ -139,13 +140,16 @@
       <div class="about__top">
 
         <div class="about__text-col reveal-block" style="--block-delay: 0s">
-          <h2 class="about__heading eyebrow">About Me</h2>
-          <p class="about__bio">
-            Highly motivated leader with strong interpersonal skills and the ability to perform
-            under pressure. Demonstrates a constant drive for personal and professional development
-            while maintaining order and organization. Combines technical expertise, customer service
-            experience, and academic knowledge to improve operational efficiency.
-          </p>
+          <div class="about__bio-card">
+            <p class="eyebrow">Profile</p>
+            <h2 class="about__heading">About Me</h2>
+            <p class="about__bio">
+              Highly motivated leader with strong interpersonal skills and the ability to perform
+              under pressure. Demonstrates a constant drive for personal and professional development
+              while maintaining order and organization. Combines technical expertise, customer service
+              experience, and academic knowledge to improve operational efficiency.
+            </p>
+          </div>
         </div>
 
         <div class="about__edu-col reveal-block" style="--block-delay: 0.18s">
@@ -304,21 +308,22 @@
           </div>
         </article>
 
-        <!-- Coming Soon -->
-        <article class="proj-card proj-card--coming-soon reveal-block" style="--block-delay: 0.32s">
-          <div class="proj-card__preview proj-card__preview--placeholder">
-            <div class="placeholder-visual" aria-hidden="true">
-              <div class="placeholder-visual__grid"></div>
-              <div class="placeholder-visual__glow"></div>
-              <span class="placeholder-visual__label">Coming Soon</span>
+        <!-- LifeSwap -->
+        <article class="proj-card reveal-block" style="--block-delay: 0.32s">
+          <a href="https://loquacious-quokka-146c8e.netlify.app/" class="proj-card__frame-link" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
+            <div class="proj-card__preview">
+              <img src="assets/images/lifeswap-cover.svg" alt="" class="proj-card__img" loading="lazy" draggable="false" />
             </div>
-          </div>
+          </a>
           <div class="proj-card__body">
-            <h3 class="proj-card__title">Coming Soon</h3>
-            <p class="proj-card__desc">A future project will be added here as I continue building products and exploring new opportunities.</p>
-            <button class="proj-card__btn proj-card__btn--disabled" disabled>
-              Coming Soon
-            </button>
+            <h3 class="proj-card__title">LifeSwap — Service Marketplace</h3>
+            <p class="proj-card__desc">A full-stack marketplace where users browse expert services, book a time slot, pay to confirm, and chat with the provider in real time. Built with Next.js, TypeScript, and Firebase (Auth + Firestore with security rules), it features provider applications, role-based dashboards with earnings, an admin panel, and a polished design system — deployed with CI/CD on Netlify. Explore the live demo with <strong>tom@lifeswap.demo</strong> / <strong>password123</strong>.</p>
+            <a href="https://loquacious-quokka-146c8e.netlify.app/" class="proj-card__btn" target="_blank" rel="noopener noreferrer">
+              View Live Demo
+              <svg class="proj-card__btn-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd"/>
+              </svg>
+            </a>
           </div>
         </article>
 
@@ -374,6 +379,14 @@
           </a>
 
         </div>
+
+        <a href="#hero" class="btn btn--secondary contact__back-btn">
+          Back to Top
+          <svg class="btn__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" d="M10 17a.75.75 0 01-.75-.75V5.612L5.29 9.77a.75.75 0 01-1.08-1.04l5.25-5.5a.75.75 0 011.08 0l5.25 5.5a.75.75 0 11-1.08 1.04l-3.96-4.158V16.25A.75.75 0 0110 17z" clip-rule="evenodd"/>
+          </svg>
+        </a>
+
       </div>
     </div>
   </section>

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" width="600" height="420" role="img" aria-label="LifeSwap — service marketplace">
+  <defs>
+    <linearGradient id="ls-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d0d1f"/>
+      <stop offset="0.55" stop-color="#111124"/>
+      <stop offset="1" stop-color="#0a0a1a"/>
+    </linearGradient>
+    <linearGradient id="ls-blue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3b82f6"/>
+      <stop offset="1" stop-color="#2563eb"/>
+    </linearGradient>
+    <radialGradient id="ls-glow" cx="50%" cy="34%" r="55%">
+      <stop offset="0" stop-color="#3b82f6" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#3b82f6" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="ls-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#3b82f6" stroke-opacity="0.05"/>
+    </pattern>
+  </defs>
+
+  <rect width="600" height="420" fill="url(#ls-bg)"/>
+  <rect width="600" height="420" fill="url(#ls-grid)"/>
+  <rect width="600" height="420" fill="url(#ls-glow)"/>
+
+  <!-- Logo tile -->
+  <rect x="258" y="90" width="84" height="84" rx="22" fill="url(#ls-blue)"/>
+  <g transform="translate(278,110) scale(1.83)" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="m16 3 4 4-4 4"/>
+    <path d="M20 7H4"/>
+    <path d="m8 21-4-4 4-4"/>
+    <path d="M4 17h16"/>
+  </g>
+
+  <text x="300" y="232" text-anchor="middle" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="48" font-weight="800" letter-spacing="-1.2" fill="#f1f5f9">LifeSwap</text>
+  <text x="300" y="265" text-anchor="middle" font-family="'Inter','Segoe UI',Arial,sans-serif" font-size="17" font-weight="500" fill="#94a3b8">Book an expert. Decide smarter.</text>
+
+  <!-- Category pills -->
+  <g font-family="'Inter','Segoe UI',Arial,sans-serif" font-size="12.5" font-weight="600" fill="#cbd5e1" text-anchor="middle">
+    <rect x="145" y="300" width="116" height="34" rx="17" fill="#818cf8" fill-opacity="0.10" stroke="#ffffff" stroke-opacity="0.10"/>
+    <text x="203" y="322">Engineering</text>
+    <rect x="271" y="300" width="74" height="34" rx="17" fill="#818cf8" fill-opacity="0.10" stroke="#ffffff" stroke-opacity="0.10"/>
+    <text x="308" y="322">Design</text>
+    <rect x="355" y="300" width="100" height="34" rx="17" fill="#818cf8" fill-opacity="0.10" stroke="#ffffff" stroke-opacity="0.10"/>
+    <text x="405" y="322">Coaching</text>
+  </g>
+</svg>
