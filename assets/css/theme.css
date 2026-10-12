@@ -1,0 +1,78 @@
+/* Keep the approved light palette as the default. */
+html { color-scheme: light; }
+
+.nav { gap: 24px; }
+.nav__logo { margin-right: auto; }
+.nav__links { order: 1; }
+
+.theme-toggle {
+  order: 2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--clr-border-h);
+  border-radius: 50%;
+  background: var(--clr-surface);
+  color: var(--clr-text-1);
+  cursor: pointer;
+  transition: background 150ms ease, color 150ms ease;
+}
+
+.theme-toggle:hover { color: var(--clr-accent-1); }
+.theme-toggle:focus-visible {
+  outline: 2px solid var(--clr-accent-1);
+  outline-offset: 4px;
+}
+.theme-toggle svg { width: 20px; height: 20px; }
+.theme-toggle__sun { display: none; }
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --clr-bg: #151b2b;
+  --clr-surface: #1e293b;
+  --clr-surface-2: #29364b;
+  --clr-border: rgba(255, 255, 255, 0.1);
+  --clr-border-h: rgba(255, 255, 255, 0.18);
+  --clr-text-1: #f1f5f9;
+  --clr-text-2: #cbd5e1;
+  --clr-text-3: #a6b4c8;
+  --clr-accent-1: #a5b4fc;
+  --clr-accent-2: #c4b5fd;
+  --clr-accent-3: #7dd3fc;
+  --grad-accent: linear-gradient(135deg, #4f46e5, #7c3aed);
+}
+
+html[data-theme="dark"] body { color-scheme: dark; }
+html[data-theme="dark"] .theme-toggle__moon { display: none; }
+html[data-theme="dark"] .theme-toggle__sun { display: block; }
+
+html[data-theme="dark"] .contact,
+html[data-theme="dark"] .site-footer { background: #111827; }
+
+html[data-theme="dark"] .hero__badge,
+html[data-theme="dark"] .about__bio-card,
+html[data-theme="dark"] .edu-card { background: var(--clr-surface); }
+
+html[data-theme="dark"] .about__bio-card:hover,
+html[data-theme="dark"] .edu-card:hover { background: #253149; }
+
+html[data-theme="dark"] .photo-ring--1 { background: #394568; }
+html[data-theme="dark"] .hero__photo { border-color: var(--clr-surface); }
+
+html[data-theme="dark"] .btn--secondary:hover,
+html[data-theme="dark"] .hero .social-link:hover { background: #29364b; }
+
+html[data-theme="dark"] .proj-card:hover,
+html[data-theme="dark"] .proj-card:focus-within {
+  border-color: rgba(165, 180, 252, 0.45);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 560px) {
+  .nav { gap: 12px; }
+  .nav__links { display: flex; gap: 14px; }
+  .nav__link { font-size: 0.75rem; }
+}

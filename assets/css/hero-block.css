@@ -1,0 +1,124 @@
+/* Hero Block adaptation: https://ui.tripled.work/components/hero-block */
+.hero {
+  min-height: 100svh;
+  background: var(--clr-bg);
+}
+
+.hero__bg { display: none; }
+
+.hero__inner {
+  flex-direction: column-reverse;
+  justify-content: center;
+  gap: 28px;
+  padding: 48px 24px 112px;
+  text-align: center;
+  max-width: 960px;
+}
+
+.hero__photo-wrap {
+  flex: none;
+  width: auto;
+  animation-delay: 0.1s;
+}
+
+.hero__photo-frame {
+  width: 112px;
+  height: 112px;
+  animation: floatY 7s ease-in-out infinite;
+}
+
+.photo-ring--1 {
+  inset: -5px;
+  background: #e0e7ff;
+  opacity: 1;
+}
+
+.photo-glow { display: none; }
+
+.hero__photo {
+  border: 4px solid white;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+}
+
+.hero__content {
+  align-items: center;
+  max-width: 760px;
+  gap: 22px;
+}
+
+.hero__badge {
+  order: -1;
+  padding: 7px 13px;
+  background: #fff;
+  border-color: var(--clr-border);
+  font-size: 0.72rem;
+  animation-delay: 0.2s;
+}
+
+.hero__name {
+  font-size: clamp(3rem, 7vw, 5.5rem);
+  line-height: 1.06;
+  letter-spacing: -0.055em;
+  animation-delay: 0.3s;
+}
+
+.hero__headline {
+  max-width: 640px;
+  font-size: clamp(1.2rem, 2.6vw, 1.7rem);
+  line-height: 1.5;
+  text-align: center;
+  animation-delay: 0.4s;
+}
+
+.hero__headline br { display: none; }
+
+.hero__sub {
+  max-width: 560px;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  text-align: center;
+  animation-delay: 0.5s;
+}
+
+.hero__actions {
+  justify-content: center;
+  margin-top: 4px;
+  animation-delay: 0.6s;
+}
+
+.hero__socials {
+  gap: 12px;
+  animation-delay: 0.7s;
+}
+
+.hero .social-link {
+  background: transparent;
+  border-color: transparent;
+  border-radius: 50%;
+  color: var(--clr-text-2);
+}
+
+.hero .social-link:hover {
+  color: var(--clr-accent-1);
+  background: #eef2ff;
+}
+
+.hero a:focus-visible {
+  outline: 2px solid var(--clr-accent-1);
+  outline-offset: 5px;
+}
+
+.scroll-indicator { bottom: 24px; }
+
+@media (max-width: 560px) {
+  .hero__inner { padding: 32px 20px 64px; gap: 24px; }
+  .hero__content { gap: 20px; }
+  .hero__photo-frame { width: 96px; height: 96px; }
+  .hero__name { font-size: clamp(2.6rem, 11vw, 3.7rem); }
+  .hero__badge { max-width: 100%; font-size: 0.68rem; }
+  .hero__actions { width: 100%; max-width: 300px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero__photo-frame { animation: none; }
+}
