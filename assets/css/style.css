@@ -1104,6 +1104,10 @@ ul  { list-style: none; }
 }
 
 /* Teffinity banner sits on a warm cream like the slide itself */
+.proj-card__preview--120 {
+  background: #eef7fc;
+}
+
 .proj-card__preview--cream {
   background: #faf7f1;
 }
